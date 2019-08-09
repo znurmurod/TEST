@@ -1,41 +1,36 @@
 
 'usestrict';
 
-     function Cars (make,model,year,owner)
-     {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.owner = owner;
+   let time;
+   let money;
+ 
+   
+   let expenses = {
+ 
+    firstQuestion: "",
+    secondQuestion: ""
 
+   };
+   let appData =  {
+       finance:money,
+      timeData:time,
+      expenses: expenses,
+      optionalexpenses: null ,
+      income: [],
+      savings: false
+   
+   };
 
-     }
-    function Person(name,surname,sex) 
-    {
-        this.name = name;
-        this.surname = surname;
-        this.sex = sex;
-        
-    }
+     money = prompt("Ваш бюджет за месяц","");
+     time = prompt("Введите дату в формате YYYY-MM-DD","");
+    expenses.firstQuestion = prompt("Введите обязательную статью расходов в этом месяце","");
+    expenses.secondQuestion = +prompt("Во сколько обойдется?","");
+     
+    let x = money/30;
 
-    let Murod = new Person ("Nurmurod", "Zakirov", "M");
-    let myfriend = new Person ("Rihsiboy", "Toirov", "M");
-    let Mycar = new Cars("Chevrole", "Nexia",2017,Murod);
-    let Hiscar = new Cars("Chevrole", "Lacetti",2019,myfriend);
+    alert("Ваш бюджет за день="+x);
     
-    Mycar.color = "White";
-    Cars.prototype.color = null;
-    Mycar.color = "Black";
-    Hiscar.color = "Yellow";
-    console.log(Mycar.owner.surname);
-    console.log(Mycar.owner.sex);
-    
 
-
-  
-
-
-    
     
 
 
